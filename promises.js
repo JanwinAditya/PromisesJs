@@ -1,8 +1,9 @@
-function getData(dataID, getNexttData){
+function getData(dataID, getNexttData)
+{
     return new Promise((resolve,reject) =>{
         setTimeout(()=>{
             console.log("data",dataID)
-            resolve("Success");
+            resolve("Success:Data fetched sucessfully");
             if(getNextData){
                 getNextData();
             }
